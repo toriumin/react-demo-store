@@ -78,7 +78,7 @@
         window.reproio = window.reproio || o;
         var s = e.createElement(r),
                 i = e.getElementsByTagName(r)[0];
-        s.src = "http://localhost:8887/build/repro-sdk.min.js",
+        s.src = "http://cdn.repro.io/web/v1/repro-sdk.min.js",
                 s.onload = function () { if (o.d && reproio.setUserID(o.d),
                 o.c && reproio.setup(o.c),
                 o.e.length > 0) { for (var e = 0; e < o.e.length; e++)reproio.track(o.e[e][0], o.e[e][1]);
@@ -87,9 +87,9 @@
                 for (var e=0; e < o.h.length; e++)reproio.setDoubleUserProfile(o.h[e][0], o.h[e][1]);
                 for (var e=0; e < o.i.length; e++)reproio.setDateUserProfile(o.i[e][0], o.i[e][1]) } },
                   i.parentNode.insertBefore(s, i) }(document, "script" );
-    reproio.setup('f8ea2390-2e4d-40db-8661-81df73ca2dad');
     reproio.track('pageView', { url: location.pathname, });
-    reproio.setUserID("toriumin");
+    reproio.setUserID("[cbt]web_message");
+    reproio.setup('f8ea2390-2e4d-40db-8661-81df73ca2dad');
   </script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/img/favicons/apple-touch-icon.png">
