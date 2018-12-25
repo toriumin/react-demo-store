@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
 import MailingList from './MailingList';
-
 const Footer = () => (
   <Fragment>
     <MailingList />
-
     <footer className="push">
       <div className="content">
         <div className="footer-content">
@@ -105,7 +103,7 @@ const Footer = () => (
                 </svg>
               </dt>
               <dd>
-                <a href="/">About</a>
+                <a href="">About</a>
               </dd>
               <dd>
                 <a href="/">Shipping & Returns</a>
@@ -177,7 +175,9 @@ const Footer = () => (
                 </svg>
               </dt>
               <dd>
-                <a href="/">Facebook</a>
+                <button onClick={window.reproio.track('フェイスブック')}>
+                  Facebook
+                </button>
               </dd>
               <dd>
                 <a href="/">Instagram</a>
@@ -195,5 +195,4 @@ const Footer = () => (
     </footer>
   </Fragment>
 );
-
 export default Footer;
